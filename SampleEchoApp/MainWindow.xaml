@@ -1,0 +1,65 @@
+﻿<Window x:Class="SampleEchoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleEchoApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="800" Height="600">
+    <StackPanel Orientation="Vertical">
+        <Border BorderBrush="Black" BorderThickness="4">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+
+                    <StackPanel Orientation="Horizontal" Width="200">
+                        <Label VerticalAlignment="Center" Margin="4" HorizontalAlignment="Left" Content="IP Address"/>
+                        <TextBox x:Name="TextIpAddress" HorizontalAlignment="Left" Margin="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Port" Margin="8" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                        <TextBox x:Name="TextIpPort" HorizontalAlignment="Left" Margin="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <Button x:Name="ButtonListen" Content="Listen"/>
+                </StackPanel>
+
+                <Border BorderBrush="Blue" BorderThickness="2">
+                    <TextBlock x:Name="TextReceivedMessages" HorizontalAlignment="Left" Margin="8" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="120" Width="600"/>
+                </Border>
+
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Green" BorderThickness="4">
+            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="200">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="IP Address"/>
+                    <TextBox TextWrapping="Wrap" Text="TextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Port"/>
+                    <TextBox TextWrapping="Wrap" Text="TextBox"/>
+                </StackPanel>
+
+                <Button Content="Connect"/>
+                <Button Content="Send"/>         
+
+            </StackPanel>
+                <Border BorderBrush="BlueViolet" BorderThickness="4">
+                <TextBlock x:Name="TextSentMessages" HorizontalAlignment="Left" Margin="8" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="120" Width="600"/>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Orientation="Vertical">
+            <Label Content="Messages"/>
+            <Border BorderBrush="Blue" BorderThickness="4">
+                <ScrollViewer>
+                    <TextBlock x:Name="TextMessages" HorizontalAlignment="Left" Margin="8" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="120" Width="800"/>
+                </ScrollViewer>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</Window>
