@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleEchoApp", "SampleEchoApp\SampleEchoApp.csproj", "{F45D1FC4-C8B8-41DE-8FEF-83D8D1260AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTcpListener", "TestTcpListener\TestTcpListener.csproj", "{77F8CF2F-A5F1-4F63-9498-EC78C1F40DD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F45D1FC4-C8B8-41DE-8FEF-83D8D1260AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F45D1FC4-C8B8-41DE-8FEF-83D8D1260AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F45D1FC4-C8B8-41DE-8FEF-83D8D1260AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F8CF2F-A5F1-4F63-9498-EC78C1F40DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F8CF2F-A5F1-4F63-9498-EC78C1F40DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F8CF2F-A5F1-4F63-9498-EC78C1F40DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F8CF2F-A5F1-4F63-9498-EC78C1F40DD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
